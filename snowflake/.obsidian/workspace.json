@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "6dcae5abff4a1856",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Snowflake Walkthrough - Uniq Technologies.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "youtube.md",
+                "file": "Snowflake Walkthrough - Uniq Technologies.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "youtube.md",
+                "file": "Snowflake Walkthrough - Uniq Technologies.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "youtube.md"
+                "file": "Snowflake Walkthrough - Uniq Technologies.md"
               }
             }
           }
@@ -159,10 +171,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fb13ee6bd9c70afa",
+  "active": "6dcae5abff4a1856",
   "lastOpenFiles": [
-    "database.md",
+    "Pasted image 20240414171402.png",
     "youtube.md",
+    "Snowflake Walkthrough - Uniq Technologies.md",
+    "Pasted image 20240414171229.png",
+    "database.md",
     "external table.md",
     "execute immediate (with exceptions).md",
     "sql objects.md",
@@ -184,8 +199,6 @@
     "sequence.md",
     "notification integrations.md",
     "integrations.md",
-    "function.md",
-    "secure view.md",
-    "materialized view.md"
+    "function.md"
   ]
 }
