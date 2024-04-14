@@ -148,7 +148,31 @@
   },
   "active": "28c8e9407a0a45fb",
   "lastOpenFiles": [
+    "share.md",
     "sql objects.md",
-    "Welcome.md"
+    "service.md",
+    "masking policy.md",
+    "Named stage.md",
+    "stage.md",
+    "volume.md",
+    "file format.md",
+    "streamlits.md",
+    "task.md",
+    "stream.md",
+    "pipe.md",
+    "row access policy.md",
+    "secure procedure.md",
+    "procedure.md",
+    "execute immediate (with exceptions).md",
+    "script.md",
+    "sequence.md",
+    "notification integrations.md",
+    "integrations.md",
+    "function.md",
+    "secure view.md",
+    "materialized view.md",
+    "view.md",
+    "external table.md",
+    "table.md"
   ]
 }
