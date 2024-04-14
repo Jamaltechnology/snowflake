@@ -13,13 +13,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "sql objects.md",
+                "file": "database.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fb13ee6bd9c70afa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "youtube.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "sql objects.md",
+                "file": "youtube.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "sql objects.md",
+                "file": "youtube.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "sql objects.md"
+                "file": "youtube.md"
               }
             }
           }
@@ -146,10 +159,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "28c8e9407a0a45fb",
+  "active": "fb13ee6bd9c70afa",
   "lastOpenFiles": [
-    "share.md",
+    "database.md",
+    "youtube.md",
+    "external table.md",
+    "execute immediate (with exceptions).md",
     "sql objects.md",
+    "share.md",
     "service.md",
     "masking policy.md",
     "Named stage.md",
@@ -163,16 +180,12 @@
     "row access policy.md",
     "secure procedure.md",
     "procedure.md",
-    "execute immediate (with exceptions).md",
     "script.md",
     "sequence.md",
     "notification integrations.md",
     "integrations.md",
     "function.md",
     "secure view.md",
-    "materialized view.md",
-    "view.md",
-    "external table.md",
-    "table.md"
+    "materialized view.md"
   ]
 }
