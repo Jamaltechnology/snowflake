@@ -16,9 +16,6 @@ It also supports common analytical aggregations such as the cube, rollup, groupi
 Like any typical Data Warehouse, it allows connection from most of the popular data integration tools, self-service BI tools and visualization tools such as IBM Data Stage, Informatica, Talend, Pentaho, Power BI, Tableau, QlikView, Spot fire, Apache Kafka, Apache Spark, and Databricks.  
 If this is not enough, you can use JDBC/ODBC drivers to connect from your application. You will be amazed to know that it also offers native connectors for languages like Python, Go Lang, and Node.js.  
 For Adhoc querying, you can use a snowflake web interface which offers almost every feature that you would expect from a SQL worksheet or a database IDE. Alternatively, you can install Snowflake CLI on your local machine or connect using DBeaver.
-
-
-
   
 
 Again Impressive! Right?  
@@ -40,18 +37,16 @@ The database is the storage layer. It allows you to define a database, a bunch o
 But there is one thing which is unique in Snowflake. The data in the tables are stored in Amazon S3, and it consumes storage only cost. There is no compute cost attached to the database unless you are executing DDL or DML queries. What it means, you will pay for the compute cost while you are running DDL statements to create a database, a schema, table, or other structural objects.  
 If all these activities take 30 minutes, you will pay for the 30 minutes of computing cost. Once your table structure is in place, you would want to load some data into your tables. If your data load job is running for an hour in a day, you pay for the compute cost for an hour. Rest of the time, you will be paying only for the storage cost. Similarly, if you are running Queries for three hours a day, you will be paying to compute-cost for those many hours. That's how it works at a high level.
 
-[![Snowflake storage and compute](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-storage-and-compute.jpg)](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-storage-and-compute.jpg)
+![[Pasted image 20240416075630.png]]
+
 
 Fig.4- Snowflake storage and compute
 
 The next part of the Snowflake is the Virtual Warehouse, which is nothing but a compute cluster. They are named after Virtual Machines. But instead of machines, Snowflake termed them as Warehouse. In short, we call them VW instead of VM. You can create VW of various sizes depending upon your requirement. It could be a single node VW, or it could be a multi-node VW such as 2 nodes, 4 nodes, 8 nodes, 16 nodes, and so on. These nodes are nothing but Amazon EC2 instances, but they are internal to VW, and you don't directly interact with them. Right?  
 Creating a VW does not have any cost associated with it. It is just a metadata creation. And you can have more than one VW configurations. For example, you might want to create a single node VW for executing DDLs or performing some other low resource consuming activities. At the same time, you can also define a 4 node VW which you want to use only for the data loading activity. And you can create one more a 32 node VW which you wish to apply for a high performing computation job that triggers every hour and completes in less than 5 minutes.
 
-  
+![[Pasted image 20240416075726.png]]
 
-  
-
-[![Snowflake Virtual Warehouse](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-virtual-warehouse.jpg)](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-virtual-warehouse.jpg)
 
 Fig.5- Snowflake Virtual Warehouse
 
@@ -65,7 +60,8 @@ For example, you created a multi-cluster VW and started a query on the VW. Snowf
 But you created a multi-cluster warehouse. A multi-cluster VW will detect this scenario and automatically launch a new VW to execute the queued SQLs. The point is straightforward. Snowflake allows you to configure automatic scale-up by starting additional VWs and scale-down by shutting down the VWs depending upon the workload. This feature is powerful if you have strict performance SLAs.  
 Great! So, you can draw a high-level architecture diagram using the discussion that we had so far. It looks like this.
 
-[![Snowflake Architecture](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-architecture.jpg)](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-architecture.jpg)
+![[Pasted image 20240416075839.png]]
+
 
 Fig.6- Snowflake Architecture
 
@@ -86,11 +82,8 @@ And that could be a powerful feature if you have something like an index that al
 Great! So, the next question is - How exactly Snowflake leveraged these S3 capabilities.  
 Let's assume that you have a large table. For a simple illustration, consider this table. This one is a relatively small table, but the idea that I am going to explain is applicable for a super-large table as well. The first thing that Snowflake does is to break the table into multiple smaller partitions. And they call it micro-partitions which is not more than 500 MB in size. So, each table partition is between 50 to 500 MB of uncompressed data. The next thing that they do is reorganize the data in each partition to make is columnar. What does it mean? Simple! Column values in the partition are stored together. The next step is to compress each column. And that's unique. You are not compressing the entire partition. You are compressing only the column values individually. Finally, they add a header to each micro partition. The header contains an offset and length of each column stored within the micro partition. They also store some other metadata information in the header, but the column offsets are the most critical information for us to understand the read pattern.
 
+![[Pasted image 20240416075920.png]]
   
-
-  
-
-[![Snowflake Micro Partitions](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-micro-partitions.jpg)](https://www.learningjournal.guru/_resources/img/jpg-5x/snowflake-micro-partitions.jpg)
 
 Fig.7- Snowflake Micro Partitions
 
