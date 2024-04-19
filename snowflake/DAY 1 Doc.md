@@ -3,7 +3,7 @@
 ## Introduction of Datawarehouse and Snowflake(4 Hours)
 - **What is Datawarehouse?**
 	- Before that, what is DB?
-	- A Data warehouse, also known as an Enterprise data warehouse (EDW), is a system used for reporting and analyzing data.
+	- A Data warehouse, also known as an Enterprise data warehouse (EDW) is a system used for reporting and analyzing data.
 	- A Data Warehouse (DW) is a relational database that is designed for query and analysis rather than transaction processing. It includes historical data derived from transaction data from single and multiple sources.
 	- Single Version of Truth(Centralized Repository)
 	- A Data Warehouse provides integrated, enterprise-wide, historical data and focuses on providing support for decision-makers for data modeling and analysis.
