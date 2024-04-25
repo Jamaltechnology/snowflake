@@ -10,11 +10,11 @@
 	- Cloud Service Layer
 	- Query Processing Layer
 	- Cloud Storage Layer
+
+## Introduction to Snowflake Capabilities(4 Hours)
 - Create Snowflake trial account
 - Snowflake Edition
 - Explore - Databases, Schemas and Table Types
-
-## Introduction to Snowflake Capabilities(4 Hours)
 - Vertical Scaling
 - Horizontal Scaling
 - Data Sharing
