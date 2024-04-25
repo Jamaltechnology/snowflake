@@ -7,7 +7,6 @@
 	- A Data Warehouse (DW) is a relational database that is designed for query and analysis rather than transaction processing. It includes historical data derived from transaction data from single and multiple sources.
 	- Single Version of Truth(Centralized Repository)
 	- A Data Warehouse provides integrated, enterprise-wide, historical data and focuses on providing support for decision-makers for data modeling and analysis.
-    - A Data Warehouse provides integrated, enterprise-wide, historical data and focuses on providing support for decision-makers for data modeling and analysis.
 - **Limitations of Traditional Data warehouses**
 	- Running on on-premise platform(Hardware Maintenance, license cost, support cost, Capex, Limited Scalability and Flexibility)
 - **Advantages of Cloud over On-Prem**
@@ -15,11 +14,11 @@
 - **What is Snowflake?**
 	- Data warehouse runs on a Cloud Platform
 	- SaaS Product
-	- Cloud Agnostic solution
-	- It cannot be run on a private cloud, or on hosted infrastructures.
+	- Cloud Agnostic solution - AWS, Azure, GCP(Cloud native: Redshift with AWS and  Bigquery with GCP) 
+	- It cannot be run on a private cloud, or on hosted infrastructures(on-prem).
 	- It is primarily available on AWS, Azure and GCP cloud platform.  
 	- Snowflake is not a relational database. So, it doesn't enforce primary key and foreign key constraints.
-	- However, it offers Snowflake SQL commands like DDL, DML, and SQL functions. It also allows you to create UDFs and Stored Procedures using JavaScript/Python. Also it Supports all forms of ANSI SQLs including Analytical aggregations, Views and Materialized Views
+	- However, it offers Snowflake SQL commands like DDL(Create,drop), DML(Ins.Upd,del), and SQL functions. It also allows you to create UDFs and Stored Procedures using JavaScript/Python. Also it Supports all forms of ANSI SQLs including Analytical aggregations, Views and Materialized Views
 	- Snowflake is a true self-managed service, meaning:
 		- There is no hardware (virtual or physical) to select, install, configure, or manage.
 		- There is virtually no software to install, configure, or manage.
@@ -49,6 +48,12 @@ Snowflake’s unique architecture consists of three key layers:
 
 - Query execution is performed in the processing layer. 
 - Snowflake processes queries using “virtual warehouses”. 
+	- - Size
+	- XSMALL  - 1 node
+	- SMALL    - 2 node
+	- MEDIUM  - 4 node
+	- LARGE     - 8 node
+	- XLARGE  - 16 node
 - Each virtual warehouse is an MPP compute cluster composed of multiple compute nodes allocated by Snowflake from a cloud provider.
 - Each virtual warehouse is an independent compute cluster that does not share compute resources with other virtual warehouses. As a result, each virtual warehouse has no impact on the performance of other virtual warehouses.
 
