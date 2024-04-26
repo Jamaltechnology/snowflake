@@ -13,7 +13,7 @@
 ## Introduction to Snowflake Capabilities(4 Hours)
 - Create Snowflake trial account
 - Snowflake Edition
-- Explore - Databases, Schemas and Table Types
+- Explore - Warehouse, Database, Schemas and Table Types
 - Vertical Scaling
 - Horizontal Scaling
 - Data Sharing
