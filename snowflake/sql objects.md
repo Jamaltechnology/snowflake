@@ -19,7 +19,8 @@
 	1. [[execute immediate (with exceptions)]]
 11. [[procedure]]
 	1. [[secure procedure]]
-	2. sql 
+	2. sql
+		1. [[SQL show commands]]
 	3. python
 	4. javascript
 	5. java
