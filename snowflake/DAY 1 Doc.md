@@ -69,17 +69,5 @@ Snowflake’s unique architecture consists of three key layers:
 	- Metadata management
 	- Query parsing and optimization
 	- Access control
-##### **Create Snowflake trial account**
-Factors contributing to the creation of Snowflake account:
-1. Snowflake edition
-2. Cloud Provider
-3. Geographical Location
-- **Explore - Databases, Schemas and Table**
-## Connecting to Snowflake
-Snowflake supports multiple ways of connecting to the service:
 
-- A web-based user interface from which all aspects of managing and using Snowflake can be accessed.
-- Command line clients (e.g. SnowSQL) which can also access all aspects of managing and using Snowflake.
-- ODBC and JDBC drivers that can be used by other applications (e.g. DBeaver) to connect to Snowflake.
-- Native connectors (e.g. Python, Spark) that can be used to develop applications for connecting to Snowflake.
-- Third-party connectors that can be used to connect applications such as ETL tools (e.g. Informatica) and BI tools (e.g. ThoughtSpot) to Snowflake.
+

@@ -1,0 +1,16 @@
+{
+	"nodes":[
+		{"id":"740afdf8ac3a5bc2","type":"text","text":"Database1","x":-482,"y":-199,"width":250,"height":60},
+		{"id":"39cf5741328f2f72","type":"text","text":"Database2","x":160,"y":-199,"width":250,"height":60},
+		{"id":"c591872def8c2f33","type":"text","text":"Schema","x":-482,"y":-109,"width":250,"height":60},
+		{"id":"7296239d4b3407b8","type":"text","text":"Tables","x":-482,"y":0,"width":250,"height":60},
+		{"id":"1882a1882e891fba","type":"text","text":"Tables","x":160,"y":0,"width":250,"height":60},
+		{"id":"922abe81aa88a7e7","type":"text","text":"Schema","x":160,"y":-109,"width":250,"height":60},
+		{"id":"14e3f2d51eeebb84","x":-1080,"y":-49,"width":540,"height":570,"type":"file","file":"Cloning in Snowflake.md"}
+	],
+	"edges":[
+		{"id":"3fa519397b6541c4","fromNode":"740afdf8ac3a5bc2","fromSide":"right","toNode":"39cf5741328f2f72","toSide":"left","label":"✅Clone"},
+		{"id":"062ff77100b9454f","fromNode":"c591872def8c2f33","fromSide":"right","toNode":"922abe81aa88a7e7","toSide":"left","label":"❌Clone"},
+		{"id":"1a074152878a8bf5","fromNode":"7296239d4b3407b8","fromSide":"right","toNode":"1882a1882e891fba","toSide":"left","label":"✅Clone"}
+	]
+}
