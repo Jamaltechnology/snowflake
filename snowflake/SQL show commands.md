@@ -15,8 +15,8 @@ SHOW <object_type_plural> [ LIKE '<pattern>' ] [ IN <scope_object_type> [ <scope
 
 	-- Current permissions on a schema
 	SHOW GRANTS ON SCHEMA <database_name>.<schema_name>;
-	show grants of role EDF_SUPPORT_USER;
-	show grants to role EDF_MGR;
+	show grants of role SUPPORT_USER;
+	show grants to role MGR;
 	
 	show grants to user demo;
 	show grants of role analyst;
@@ -34,7 +34,7 @@ SHOW <object_type_plural> [ LIKE '<pattern>' ] [ IN <scope_object_type> [ <scope
 
 -- Session/User operations
 	show parameters;
-		show parameters in warehouse WH_EDF
+		show parameters in warehouse WH
 	show variables;
 	show transactions;
 	show locks;
