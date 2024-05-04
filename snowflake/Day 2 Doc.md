@@ -1,3 +1,4 @@
+#### Decoupling Storage and Compute
 ## Connecting to Snowflake
 Snowflake supports multiple ways of connecting to the service:
 
@@ -7,7 +8,6 @@ Snowflake supports multiple ways of connecting to the service:
 - Native connectors (e.g. Python, Spark) that can be used to develop applications for connecting to Snowflake.
 - Third-party connectors that can be used to connect applications such as ETL tools (e.g. Informatica) and BI tools (e.g. ThoughtSpot) to Snowflake.
 ##### **Create Snowflake trial account**
-Decoupling Storage and Compute
 Factors contributing to the creation of Snowflake account:
 1. Snowflake edition
     The Snowflake Edition that your organization chooses determines the unit costs for the credits and the data storage you use.
@@ -39,6 +39,11 @@ Factors contributing to the creation of Snowflake account:
 Snowflake Credit Calculation :
 - Size of the Warehouse
 - How long the Warehouse runs(Response Time)
+
+## Snowflake Supporting file formats
+- Structured: CSV/TSV
+- Semi-Structured: JSON, XML,ORC,PARQUET,AVRO 
+-Apache Iceberg
 
 ### Caching in Snowflake
 - Metadata Cache
